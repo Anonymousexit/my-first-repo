@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment solution for module 2</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+		}
+		h1 {
+			text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            font-family: "Poppins", sans-serif;
+		}
+		body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section {
+            position: relative;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #d1e7dd;
+            text-align: center;
+        }
+        .section-title1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #FFCDD2;
+            padding: 5px 10px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .section-title2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color:#FF8A80 ;
+            padding: 5px 10px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .section-title3 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color:#FFF9C4 ;
+            padding: 5px 10px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .section p {
+            margin-top: 30px;
+        }
+         @media (min-width: 992px) {
+            .section {
+                width: 32%;
+            }
+        }
+
+        /* Tablet View (768px - 991px) */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .section {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            .section:nth-child(3) {
+                width: 100%;
+            }
+        }
+
+        /* Mobile View (≤767px) */
+        @media (max-width: 767px) {
+            .section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+	</style>
+</head>
+<body>
+
+	<h1>Our Menu </h1>
+	<div class="container">
+	<div class="section">
+		<div class="section-title1">Chicken</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    consequat.</p>
+	</div>
+
+	<div class="section">
+		<div class="section-title2">Beef</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    consequat. </p>
+	</div>
+
+	<div class="section">
+		<div class="section-title3">Sushi</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   consequat.</p> 
+	</div>
+	</div>
+
+</body>
+</html>
